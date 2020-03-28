@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>猜数字游戏</title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-      html {
-        font-family: sans-serif
-      }
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto
-      }
-      .lastResult {
-        color: white;
-        padding: 3px
-      }
+        body {
+            background: #82c458;
+        }
+
+        .warpper {
+            width: 50%;
+            margin:10% auto;
+            padding:2% 10%;
+            background: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #number {  /*number input*/
+            width: 50%;
+            margin: auto;
+        }
     </style>
   </head>
 
   <body>
-    <h1>猜数字游戏</h1>
-
-    <p>我刚才随机选定了一个100以内的自然数。看你能否在 10 次以内猜中它。每次我都会告诉你所猜的结果是高了还是低了。</p>
+    <div class="text-center">
+        <div class="warpper">
+            <a href="https://github.com/codeyu/guess-number" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+            <div class="page-header">
+                <h1>猜数字</h1>
+            </div>
+            <br><br>
+           <p>我刚才随机选定了一个100以内的自然数。看你能否在 10 次以内猜中它。每次我都会告诉你所猜的结果是高了还是低了。</p>
 
     <div class="form">
       <label for="guessField">请猜数: </label>
@@ -38,7 +46,22 @@
       <p class="lastResult"></p>
       <p class="lowOrHi"></p>
     </div>
+            <div>
+                <br><br>
+                
+            </div>
+            <hr>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript"><img
+       src="https://zh.wikipedia.org/wiki/File:HTML5_logo_and_wordmark.svg"
+       alt="powered by JS"
+       title="powered by JS"></a>
+        </div>
+    </div>
 
+    
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
 
       // 开始编写 JavaScript 代码
